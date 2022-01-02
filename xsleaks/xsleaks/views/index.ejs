@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hello world</title>
+	</head>
+	<body>
+		<div>
+			<form method="POST" action="/note" enctype="multipart/form-data">
+				Upload your note:
+				<br><br>
+<input type="file" name="content">
+				<br><br>
+				<button id="noteSubmitBtn">Submit</button>
+				<hr>
+			</form>
+		</div>
+		<div>
+			<br>
+<a href=/note>View your note</a>
+<br><br>
+		<hr>
+		<div>
+			<form method="GET" action="/search">
+				Search for notes:
+				<br><br>
+				<input name="q" placeholder="Search">
+				<br><br>
+				<button>Submit</button>
+			</form>
+			<br>
+			<hr>
+			<a href='/hack?x=<h1>nice'>hack</a>
+		</div>
+
+	</body>
+</html>
